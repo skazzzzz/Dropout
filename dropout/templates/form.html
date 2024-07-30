@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Success Prediction</title>
+</head>
+<body>
+    <h1>Student Success Prediction Form</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age at Enrollment:</label>
+        <input type="number" id="age" name="Age at enrollment"><br>
+
+        <label for="marital_status">Marital Status:</label>
+        <select id="marital_status" name="Marital status">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Widower">Widower</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Facto Union">Facto Union</option>
+            <option value="Legally Separated">Legally Separated</option>
+        </select><br>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="Course"><br>
+
+        <label for="attendance">Daytime/Evening Attendance:</label>
+        <select id="attendance" name="Daytime/evening attendance">
+            <option value="Daytime">Daytime</option>
+            <option value="Evening">Evening</option>
+        </select><br>
+
+        <label for="prev_qual">Previous Qualification:</label>
+        <input type="text" id="prev_qual" name="Previous qualification"><br>
+
+        <label for="mother_qual">Mother's Qualification:</label>
+        <input type="text" id="mother_qual" name="Mother's qualification"><br>
+
+        <label for="father_qual">Father's Qualification:</label>
+        <input type="text" id="father_qual" name="Father's qualification"><br>
+
+        <label for="mother_occ">Mother's Occupation:</label>
+        <input type="text" id="mother_occ" name="Mother's occupation"><br>
+
+        <label for="father_occ">Father's Occupation:</label>
+        <input type="text" id="father_occ" name="Father's occupation"><br>
+
+        <label for="displaced">Displaced:</label>
+        <select id="displaced" name="Displaced">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br>
+
+        <label for="special_needs">Educational Special Needs:</label>
+        <select id="special_needs" name="Educational special needs">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br>
+
+        <label for="debtor">Debtor:</label>
+        <select id="debtor" name="Debtor">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br>
+
+        <label for="tuition">Tuition Fees Up to Date:</label>
+        <select id="tuition" name="Tuition fees up to date">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label for="scholarship">Scholarship Holder:</label>
+        <select id="scholarship" name="Scholarship holder">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br>
+
+        <label for="international">International:</label>
+        <select id="international" name="International">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
